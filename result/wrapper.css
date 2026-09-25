@@ -1,0 +1,428 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(236, 242, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+    height: 470px; */
+
+
+
+}
+
+
+
+.col-1 {
+    background: linear-gradient(to bottom, hsl(251, 100%, 63%), hsl(242, 83%, 55%));
+    padding: 40px;
+    width: 370px;
+    border-radius: 25px;
+    height: 490px;
+    transform: translateX(20px);
+    /* position: relative;
+    z-index: 2; */
+}
+
+.flex-row {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.result {
+    font-size: 20px;
+    text-transform: capitalize;
+    color: rgb(195, 186, 255);
+    font-weight: 600;
+
+}
+
+.circle-nums {
+    width: 100%;
+    background-color: rgb(70, 46, 222);
+    height: 180px;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 50%;
+    flex-direction: column;
+}
+
+.circle-nums h3 {
+    color: #ffffff;
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.circle-nums span {
+    color: rgb(195, 186, 255);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.great {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.scored {
+    color: #ffffff;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.col-2 {
+    background-color: rgb(255, 255, 255);
+    padding: 40px;
+    width: 370px;
+    height: 490px;
+    border-radius: 0 25px 25px 0;
+    /* position: relative;
+    z-index: 1;
+    top: 0;
+    right: 15px; */
+}
+
+
+.summary-text {
+    font-size: 25px;
+    color: rgb(76, 82, 102);
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+
+.control-row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+
+}
+
+.reaction-pink {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(255, 246, 247);
+    width: 100%;
+    padding: 10px;
+    height: 50px;
+    border-radius: 15px;
+
+}
+
+
+.inner-reaction {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.svg-icon {
+    display: flex;
+    align-items: center;
+}
+
+.svg-icon svg {
+    width: 20px;
+    height: 20px;
+    color: #ff0000;
+}
+
+.inner-reaction h2 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #ff0000;
+    text-transform: capitalize;
+}
+
+.last-text {
+    font-size: 20px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.last-text .numbers {
+    color: rgb(156, 152, 161);
+}
+
+.memory-yellow {
+    background-color: rgb(255, 250, 244);
+}
+
+.inner-memory {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.memory-icon {
+    display: flex;
+    align-items: center;
+}
+
+.memory-icon svg {
+    width: 20px;
+    height: 20px;
+    color: rgb(255, 214, 113);
+}
+
+.inner-memory h2 {
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(255, 214, 113);
+    text-transform: capitalize;
+}
+
+.verbal-green {
+    background-color: rgb(242, 253, 249);
+
+}
+
+.inner-verbal {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.verbal-icon {
+    display: flex;
+    align-items: center;
+}
+
+.verbal-icon svg {
+    width: 20px;
+    height: 20px;
+    color: rgb(79, 194, 162);
+}
+
+.inner-verbal h2 {
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(79, 194, 162);
+    text-transform: capitalize;
+}
+
+.visual-light-blue {
+    background-color: rgb(244, 244, 254);
+}
+
+.inner-visual {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.visual-icon {
+    display: flex;
+    align-items: center;
+}
+
+.visual-icon svg {
+    width: 20px;
+    height: 20px;
+    color: rgb(68, 75, 174);
+}
+
+.inner-visual h2 {
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(68, 75, 174);
+    text-transform: capitalize;
+}
+
+.continue {
+    width: 100%;
+    border: none;
+    height: 60px;
+    background: rgb(48, 59, 89);
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 45px;
+    margin-bottom: 25px;
+}
+
+.continue p {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+/* @media (min-width: 769px) and (max-width: 1024px) {
+
+    section {
+        padding: 20px;
+    }
+
+    .row {
+        grid-template-columns: 1fr 1fr;
+        width: 90%;
+        max-width: 740px;
+    }
+
+    .col-1,
+    .col-2 {
+        width: 100%;
+    }
+
+    .col-1 {
+        padding: 30px;
+    }
+
+    .col-2 {
+        padding: 30px;
+    }
+} */
+
+@media (max-width: 768px) {
+
+    section {
+        height: auto;
+        min-height: 100vh;
+        width: 100%;
+        display: block;
+        background: white;
+    }
+
+    .row {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .col-1 {
+        width: 100%;
+        height: 410px;
+        padding: 30px 20px;
+        border-radius: 0 0 30px 30px;
+        transform: none;
+    }
+
+    .col-2 {
+        width: 100%;
+        height: auto;
+        min-height: 500px;
+        padding: 30px;
+        border-radius: 0;
+    }
+
+    .flex-row {
+        gap: 25px;
+    }
+
+    .circle-nums {
+        width: 140px;
+        height: 140px;
+    }
+
+    .circle-nums h3 {
+        font-size: 60px;
+    }
+
+    .great {
+        font-size: 28px;
+    }
+
+    .scored {
+        font-size: 15px;
+    }
+
+    .summary-text {
+        margin-top: 0;
+    }
+
+    .control-row {
+        gap: 15px;
+    }
+
+    .reaction-pink {
+        height: 55px;
+    }
+
+    .continue {
+        margin-top: 35px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .col-1 {
+        height: 350px;
+        padding: 25px 15px;
+    }
+
+    .col-2 {
+        padding: 25px 20px;
+    }
+
+    .circle-nums {
+        width: 130px;
+        height: 130px;
+    }
+
+    .circle-nums h3 {
+        font-size: 55px;
+    }
+
+    .great {
+        font-size: 26px;
+    }
+
+    .scored {
+        font-size: 14px;
+    }
+
+    .summary-text {
+        font-size: 23px;
+    }
+
+    .inner-reaction h2,
+    .inner-memory h2,
+    .inner-verbal h2,
+    .inner-visual h2 {
+        font-size: 17px;
+    }
+
+    .last-text {
+        font-size: 17px;
+    }
+
+    .continue {
+        height: 55px;
+    }
+}
